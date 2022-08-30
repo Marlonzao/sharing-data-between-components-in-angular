@@ -1,0 +1,12 @@
+<p>data-via-input works!</p>
+
+Parent {{parentMessage}} <br>
+
+<form [formGroup]="contactForm">
+    <p>
+        <label for="firstname">First Name </label>
+        <money-input [mpFormControl]="contactForm.controls['firstname']"></money-input>
+    </p>
+</form>
+
+<app-child [childMessage]="parentMessage"></app-child>
